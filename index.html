@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
+    <!-- Vincular la hoja de estilo -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Fuente de Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400&display=swap" rel="stylesheet">
+    <title>Encriptador challenge</title>
+</head>
+<body>
+    <header>
+        <!-- Logo del sitio -->
+        <img class="logo" src="imagenes/Logo.svg" alt="logo">
+    </header>
+    <main>
+        <section class="seccion1">
+            <!-- Contenedor para el área de texto -->
+            <div class="contenedorcajatexto">
+                <textarea placeholder="Ingrese el texto aquí" class="cajatexto"></textarea>
+            </div>
+            <!-- Mensaje de alerta -->
+            <div class="alerta">
+                <img src="imagenes/alerta.svg" alt="alerta">
+                <p>Solo letras minúsculas y sin acentos</p>
+            </div>
+            <!-- Botones para encriptar y desencriptar -->
+            <div class="contenedor-botones">
+                <input type="button" class="btn-encriptar" value="Encriptar">
+                <input type="button" class="btn-desencriptar" value="Desencriptar">
+            </div>
+        </section>
+        <section class="seccion2">
+            <!-- Contenedor para la imagen del muñeco -->
+            <div class="contenedormunieco">
+                <img src="imagenes/Muñeco.svg" alt="muñeco">
+            </div>
+            <!-- Mensaje predeterminado -->
+            <div class="contenedor-parrafo">
+                <h3>Ningún mensaje fue <br> encontrado</h3>
+                <p>Ingresa el texto que desees encriptar o <br> desencriptar.</p>
+            </div>
+            <!-- Botón para copiar el texto encriptado/desencriptado -->
+            <div class="contenedor-copiar">
+                <input type="button" class="btn-copiar" value="Copiar">
+            </div>
+            <!-- Contenedor para el resultado -->
+            <div class="contenedor-resultado">
+                <p class="texto-resultado"></p>
+            </div>
+        </section>
+    </main>
+    <!-- Vincular el archivo JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
